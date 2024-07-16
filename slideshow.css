@@ -34,15 +34,6 @@
     padding: 10px;
     font-size: 30px;
   }
-  
-  .button {
-    padding: 10px 20px;
-    background-color: transparent;
-    border: 2px solid green;
-    color: white;
-    cursor: pointer;
-    margin-top: 10px;
-  }
 
   .slideshow-img{
     width: 100%;

@@ -18,7 +18,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
+    padding: 3px;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -82,6 +82,15 @@ body {
     transform: rotate(45deg) translate(-6px, -6px);
   }
 
+  .button {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid green;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
   .weather-content{
     display: flex;
     justify-content: center;
@@ -107,6 +116,10 @@ body {
     text-align: center;
   }
 
+  #About{
+    margin-bottom: 70px;
+  }
+
   .about-text{
     font-size: 30px;
     text-align: center;
@@ -119,7 +132,65 @@ body {
     text-align: center;
   }
 
+  #Rooms{
+    background-color: rgb(197, 197, 197);
+    padding-bottom: 30px;
+  }
 
+  .rooms-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    margin: 0 20px 80px 20px;
+    }
+
+  #expoBtn{
+    margin: 20px;
+  }
+
+  .rooms{
+    margin: 20px;
+    margin-top: 40px;
+  }
+
+  .atroom{
+    border-radius: 20px 20px 20px 20px;
+    padding-bottom: 30px;
+    background-color: aliceblue;
+  }
+
+  .t_rroom{
+    border-radius: 20px 20px 20px 20px;
+    padding-bottom: 30px;
+    background-color: aliceblue;
+  }
+
+  .room-img img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .room-img{
+    margin: 0px;
+  }
+
+  .roomname{
+    margin: 20px 0 0 20px;
+  }
+
+  .room-text{
+    margin: 20px;
+  }
+
+
+  .roomBtn{
+    margin: 0 0 0 20px;
+  }
+
+  .roomBtn button{
+    color: black;
+  }
   
   /* Responsive Styles */
   @media (max-width: 768px) {
