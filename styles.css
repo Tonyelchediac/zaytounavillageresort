@@ -10,6 +10,7 @@
 }
 
 body {
+  margin: 0 15rem 0 15rem;
     font-family: Arial, sans-serif;
   }
   
@@ -61,16 +62,16 @@ body {
   }
   
   .menu-toggle div {
-    width: 27px;
+    width: 25px;
     height: 3px;
     background-color: black;
-    margin: 3px;
+    margin: 2px;
     transition: 0.4s;
   }
   
   .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-6px, 6px);
-    transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-3px, 3px);
   }
   
   .change .bar2 {
@@ -82,6 +83,18 @@ body {
     transform: rotate(45deg) translate(-6px, -6px);
   }
 
+  .frstbutton {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid green;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+  }
+
   .button {
     padding: 10px 20px;
     background-color: transparent;
@@ -89,35 +102,13 @@ body {
     color: white;
     cursor: pointer;
     margin-top: 10px;
-  }
-
-  .weather-content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10rem;
-    font-size: 15px;
-  }
-
-  .weather{
-    text-align: center;
-  }
-
-  .sun{
-    margin: 0 70px 0 70px;
-  }
-
-  .sun img{
-    width: 80px;
-    height: 80px;
-  }
-
-  .season{
+    font-size: 12px;
+    font-weight: 700;
     text-align: center;
   }
 
   #About{
-    margin-bottom: 70px;
+    margin: 40px 50px 70px 50px;
   }
 
   .about-text{
@@ -127,7 +118,7 @@ body {
   }
 
   .about-text-1{
-    margin: 20px;
+    margin: 30px;
     word-spacing: 3px;
     text-align: center;
   }
@@ -137,33 +128,43 @@ body {
     padding-bottom: 30px;
   }
 
+  .roomsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 80px;
+    padding: 80px;
+}
+
   .rooms-content{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 30rem;
     padding-top: 20px;
     margin: 0 20px 80px 20px;
     }
 
-  #expoBtn{
-    margin: 20px;
-  }
+    .explore{
+      margin-top: 20px;
+      font-size: 40px;
+      float: left;
+    }
 
-  .rooms{
-    margin: 20px;
-    margin-top: 40px;
+  #expoBtn{
+    margin-top: 20px;
+    float: right;
   }
 
   .atroom{
     border-radius: 20px 20px 20px 20px;
     padding-bottom: 30px;
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
   }
 
   .t_rroom{
     border-radius: 20px 20px 20px 20px;
     padding-bottom: 30px;
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
   }
 
   .room-img img{
@@ -177,6 +178,8 @@ body {
 
   .roomname{
     margin: 20px 0 0 20px;
+    font-size: 25px;
+    font-weight: 700;
   }
 
   .room-text{
@@ -191,9 +194,80 @@ body {
   .roomBtn button{
     color: black;
   }
-  
-  /* Responsive Styles */
-  @media (max-width: 768px) {
+
+  #expoBtnHouses{
+    margin-top: 20px;
+    float: right;
+    color: black;
+  }
+
+  /****************************************/
+
+  .housesContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 80px;
+    padding: 80px;
+}
+
+    .explore{
+      margin-top: 20px;
+      font-size: 40px;
+      float: left;
+    }
+
+  #expoBtn{
+    margin-top: 20px;
+    float: right;
+  }
+
+  .mrhouse{
+    border-radius: 20px 20px 20px 20px;
+    padding-bottom: 30px;
+    background-color: rgb(197, 197, 197);
+  }
+
+  .nlhouse{
+    border-radius: 20px 20px 20px 20px;
+    padding-bottom: 30px;
+    background-color: rgb(197, 197, 197);
+  }
+
+  .tyhouse{
+    border-radius: 20px 20px 20px 20px;
+    padding-bottom: 30px;
+    background-color: rgb(197, 197, 197);
+  }
+
+  .house-img img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .house-img{
+    margin: 0px;
+  }
+
+  .housename{
+    margin: 20px 0 0 20px;
+    font-size: 25px;
+    font-weight: 700;
+  }
+
+  .house-text{
+    margin: 20px;
+  }
+
+
+  .houseBtn{
+    margin: 0 0 0 20px;
+  }
+
+  .houseBtn button{
+    color: black;
+  }
+
+    @media (max-width: 768px) {
     .navlist {
       flex-wrap: wrap;
     }
@@ -219,10 +293,78 @@ body {
     }
   }
   
-  /* Ensure navlist ul is displayed on larger screens */
   @media (min-width: 769px) {
+    
     .navlist ul {
       display: flex !important;
     }
+
+  }
+
+  @media (max-width: 769px) {
+
+    body {
+      margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .frstbutton {
+        padding: 10px 20px;
+        background-color: transparent;
+        border: 2px solid green;
+        color: white;
+        cursor: pointer;
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+      }
+
+    .button {
+      padding: 10px 20px;
+      background-color: transparent;
+      border: 2px solid green;
+      color: white;
+      cursor: pointer;
+      margin-top: 10px;
+      font-size: 12px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    #About{
+      margin: 40px 0px 70px 0px;
+    }
+
+      .rooms-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding-top: 20px;
+        margin: 0 20px 60px 20px;
+        }
+    
+        .explore{
+          margin-top: 20px;
+          font-size: 25px;
+          float: left;
+        }
+    
+      #expoBtn{
+        margin-top: 20px;
+        float: right;
+      }
+
+      .roomsContainer {
+        gap: 40px;
+        padding: 30px;
+    }
+
+    .housesContainer {
+      gap: 40px;
+      padding: 30px;
+  }
+
   }
   

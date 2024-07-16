@@ -28,11 +28,11 @@
   
   .text {
     padding: 10px;
-    font-size: 60px;
+    font-size: 40px;
   }
   .text-1 {
     padding: 10px;
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .slideshow-img{
@@ -60,12 +60,12 @@
 
     .text {
         padding: 10px;
-        font-size: 30px;
+        font-size: 40px;
       }
 
       .text-1 {
         padding: 10px;
-        font-size: 10px;
+        font-size: 15px;
       }
 
       .slideshow-img{
