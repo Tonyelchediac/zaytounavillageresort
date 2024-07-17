@@ -323,7 +323,7 @@ body {
 
     .facilities{
       font-size: 50px;
-      font-weight: 700;
+      font-weight: 600;
     }
 
     .facilitiesContainer {
@@ -357,6 +357,72 @@ body {
   .facilities-btn button{
     color: black;
   }
+
+  #Restaurant{
+    background-color: rgb(197, 197, 197);
+    padding-bottom: 5px;
+  }
+
+  .restaurant-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30rem;
+    padding-top: 20px;
+    margin: 0 10px 40px 10px;
+    }
+
+  .restaurant-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  .restaurant-logo svg{
+    width: 100px;
+    height: 100px;
+  }
+
+    .restaurant-text1{
+    font-weight: 600;
+    margin: 50px 30px 40px 30px;
+    padding-top: 10px;
+    margin-bottom: 3rem;
+  }
+
+  .eventsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 80px;
+    padding: 80px;
+    justify-content: center;
+}
+
+.events-options{
+  text-align: center;
+  margin: 20px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.events-logo svg{
+  width: 50px;
+  height: 50px;
+}
+
+.events-text{
+  margin: 20px 0 20px 0;
+}
+
+.events-text1{
+  margin: 20px;
+}
+
+.events-btn button{
+  color: black;
+  text-align: center;
+}
 
 
 
@@ -395,17 +461,6 @@ body {
       .navlist li a {
         padding: 15px;
       }
-  }
-  
-  @media (min-width: 769px) {
-    
-    .navlist ul {
-      display: flex !important;
-    }
-
-  }
-
-  @media (max-width: 769px) {
 
     body {
       margin: 0;
@@ -419,7 +474,7 @@ body {
         color: white;
         cursor: pointer;
         margin-top: 10px;
-        font-size: 18px;
+        font-size: 12px;
         font-weight: 700;
         text-align: center;
       }
@@ -480,7 +535,7 @@ body {
     }
 
     .facilities-RN{
-      font-size: 12px;
+      font-size: 15px;
     }
 
     .facilities{
@@ -491,6 +546,41 @@ body {
       gap: 40px;
       padding: 30px;
   }
+
+  .facilities-text{
+    font-size: 30px;
+  }
+
+  .restaurant-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 20px;
+    margin: 0 10px 40px 10px;
+    }
+
+    .restaurant-rn{
+      font-size: 20px;
+    }
+
+    .eventsContainer {
+      gap: 40px;
+      padding: 30px;
+  }
+
+  .events-text{
+    font-size: 30px;
+  }
+
+  }
+
+    
+  @media (min-width: 769px) {
+    
+    .navlist ul {
+      display: flex !important;
+    }
 
   }
   
