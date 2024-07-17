@@ -9,21 +9,26 @@
 
 }
 
+:root{
+  --second-color: #008000;
+}
+
 body {
-  margin: 0 15rem 0 15rem;
-    font-family: Arial, sans-serif;
-  }
-  
-  .navlist {
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 3px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
+  margin: 0 15rem;
+  font-family: Arial, sans-serif;
+}
+
+.navlist {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px;
+  position: fixed;
+  width: calc(100% - 30rem);
+  top: 0;
+  z-index: 1000;
+}
   
   .navlist .logo {
     display: flex;
@@ -49,7 +54,6 @@ body {
   .navlist li a {
     display: block;
     color: black;
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
@@ -69,9 +73,10 @@ body {
     transition: 0.4s;
   }
   
+  /* Change for bars to form an "X" */
   .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
-    transform: rotate(-45deg) translate(-3px, 3px);
+    -webkit-transform: rotate(-45deg) translate(-5px, 5px);
+    transform: rotate(-45deg) translate(-5px, 5px);
   }
   
   .change .bar2 {
@@ -79,10 +84,10 @@ body {
   }
   
   .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-6px, -6px);
-    transform: rotate(45deg) translate(-6px, -6px);
+    -webkit-transform: rotate(45deg) translate(-5px, -5px);
+    transform: rotate(45deg) translate(-5px, -5px);
   }
-
+  
   .frstbutton {
     padding: 10px 20px;
     background-color: transparent;
@@ -106,6 +111,26 @@ body {
     font-weight: 700;
     text-align: center;
   }
+
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.aboutbutton {
+    padding: 10px 20px;
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid green;
+    color: black;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+}
 
   #About{
     margin: 40px 50px 70px 50px;
@@ -141,7 +166,7 @@ body {
     align-items: center;
     gap: 30rem;
     padding-top: 20px;
-    margin: 0 20px 80px 20px;
+    margin: 0 20px 50px 20px;
     }
 
     .explore{
@@ -195,13 +220,15 @@ body {
     color: black;
   }
 
+  #Houses{
+    margin-bottom: 30px;
+  }
+
   #expoBtnHouses{
     margin-top: 20px;
     float: right;
     color: black;
   }
-
-  /****************************************/
 
   .housesContainer {
     display: grid;
@@ -267,30 +294,107 @@ body {
     color: black;
   }
 
+  .getOffer-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30rem;
+    padding-top: 20px;
+    margin: 0 20px 40px 20px;
+    }
+
+    #getOffer{
+      background-color: rgb(197, 197, 197);
+      padding-bottom: 5px;
+    }
+
+    .facilities-content{
+      text-align: center;
+      gap: 30rem;
+      padding-top: 20px;
+      margin: 0 20px 40px 20px;
+    }
+
+    .facilities-RN{
+      margin: 40px 0 10px 0;
+      font-size: 15px;
+      color: var(--second-color);
+    }
+
+    .facilities{
+      font-size: 50px;
+      font-weight: 700;
+    }
+
+    .facilitiesContainer {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 80px;
+      padding: 80px;
+      justify-content: center;
+  }
+
+  .facilities-options{
+    text-align: center;
+    margin: 20px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+  }
+
+  .facilities-logo svg{
+    width: 50px;
+    height: 50px;
+  }
+
+  .facilities-text{
+    margin: 20px 0 20px 0;
+  }
+
+  .facilities-text1{
+    margin: 20px;
+  }
+
+  .facilities-btn button{
+    color: black;
+  }
+
+
+
+    /**********************************************/
+
     @media (max-width: 768px) {
-    .navlist {
-      flex-wrap: wrap;
-    }
-  
-    .navlist ul {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-    }
-  
-    .navlist li {
-      margin: 0;
-      width: 100%;
-    }
-  
-    .navlist li a {
-      padding: 10px;
-      text-align: left;
-    }
-  
-    .menu-toggle {
-      display: flex;
-    }
+      .navlist {
+        padding: 10px;
+        width: 100%;
+      }
+    
+      .menu-toggle {
+        display: flex;
+      }
+    
+      .navlist ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #f9f9f9;
+        width: 100%;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      }
+    
+      .navlist ul.show {
+        display: flex;
+      }
+    
+      .navlist li {
+        margin-left: 0;
+        text-align: left;
+      }
+    
+      .navlist li a {
+        padding: 15px;
+      }
   }
   
   @media (min-width: 769px) {
@@ -362,6 +466,28 @@ body {
     }
 
     .housesContainer {
+      gap: 40px;
+      padding: 30px;
+  }
+
+  .getOffer-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 20px;
+    margin: 0 20px 40px 20px;
+    }
+
+    .facilities-RN{
+      font-size: 12px;
+    }
+
+    .facilities{
+      font-size: 35px;
+    }
+
+    .facilitiesContainer {
       gap: 40px;
       padding: 30px;
   }
