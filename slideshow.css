@@ -51,7 +51,7 @@
     transition: background-color 0.6s ease;
   }
   
-  .active {
+  .on {
     background-color: #717171;
   }
   
