@@ -21,9 +21,9 @@
             </div>
             <ul id="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="reserve-now.html" class="active"><span class="book-now-nav">Book Now</span></a></li>
-                <li><a href="#">Rooms & Houses</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="reserve-now.html" class="book-now-nav">Book Now</a></li>
+                <li><a href="Rooms&Houses.html">Rooms & Houses</a></li>
                 <li><a href="#">Bar & Restaurant</a></li>
                 <li><a href="#">Wedding & Events</a></li>
                 <li><a href="contact-us.html">Contact</a></li>
@@ -31,26 +31,29 @@
         </nav>
     </header>
 
+    <!-- home section -->
+
     <section id="Home">
         <div class="home-content">
             <div class="slideshow-container">
                 <div class="slideshow-item fade">
-                    <img class="slideshow-img" src="zaytouna village/reserve now.jpg">
+                    <img class="slideshow-img" src="zaytouna village/snow.jpg">
                     <div class="text-overlay">
-                        <div class="text">Reserve Now</div>
-                        <div class="text-1">We Love Having You There</div>
+                        <div class="text">About us</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!--  about section -->
+
     <section id="About">
         <div class="about-content">
-            <div class="about-text">About us</div>
+            <div class="about-text">About Us</div>
             <div class="about-text-1">Welcome to Zaytouna Village Resort, your serene getaway nestled along the mountains of Batroun. Enjoy breathtaking views of the Mediterranean Sea and indulge in a wide range of amenities and activities. From luxurious accommodations to diverse dining options and an extensive list of on-site experiences, we invite you to unwind and immerse yourself in the natural beauty of our coastal retreat.</div>
             <div class="buttonContainer">
-            <button class="aboutbutton">Contact us</button>
+            <a href="contact-us.html"><button class="aboutbutton">Contact us</button></a>
             </div>
         </div>
     </section>
@@ -61,11 +64,12 @@
         </div>
     </section>
 
+    <!-- contact section -->
+
     <section id="get-in-touch">
         <div class="get-in-touch-content">
             <div class="get-in-touch-rn">Zaytouna Village Resort</div>
-            <div class="get-in-touch-text">Book Now</div>
-            <div class="get-in-touch-text"id="nb-reserve-now">NB: before you starting, notice that you want to pay 25% from the price of the room in WISHMONEY to reserve it after 24h from filling the form</div>
+            <div class="get-in-touch-text">Get in Touch</div>
             <form action="#" method="POST" class="contact-form">
                 <div class="form-group">
                     <label for="firstName">First Name:</label>
@@ -84,44 +88,14 @@
                     <input type="email" id="email" name="email" required>
                 </div>
                 <div class="form-group">
-                    <label for="email">ID Number:</label>
-                    <input type="number" id="id-number" name="id-number" required>
-                </div>
-                <div class="form-group">
-                    <label for="image-upload">Upload ID :</label>
-                    <label for="image-upload" style="font-size: 11px; display: block;">Front & Back ID photo</label>
-                    <input type="file" id="image-upload" name="image-upload" accept="image/*" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Number Of Persons:</label>
-                    <input type="number" id="number" name="number" required>
-                </div>
-                <div class="form-group">
-                    <label for="room-type">Room or House Type:</label><br>
-                    <input type="radio" id="at-room" name="room-type" value="at-room" required style="margin-top: 6px;">
-                    <label for="at-room">AT ROOM</label><br>
-                    <input type="radio" id="tr-room" name="room-type" value="tr-room" required>
-                    <label for="tr-room">T&R ROOM</label><br>
-                    <input type="radio" id="mr-house" name="room-type" value="mr-house" required>
-                    <label for="mr-house">MR HOUSE</label><br>
-                    <input type="radio" id="nl-house" name="room-type" value="nl-house" required>
-                    <label for="nl-house">NL HOUSE</label><br>
-                    <input type="radio" id="ty-house" name="room-type" value="ty-house" required>
-                    <label for="ty-house">TY HOUSE</label>
-                </div>
-                <div class="form-group">
-                    <label for="check-in-date">Check-in Date:</label>
-                    <input type="date" id="check-in-date" name="check-in-date" required>
-                </div>
-                <div class="form-group">
-                    <label for="check-out-date">Check-out Date:</label>
-                    <input type="date" id="check-out-date" name="check-out-date" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
                 </div>
                 <div class="form-group">
                     <label for="captcha">Are you human? Answer this: 3 + 4 =</label>
                     <input type="text" id="captcha" name="captcha" required>
                 </div>
-                <button type="submit">Reserve now</button>
+                <button type="submit">Submit</button>
             </form>
         </div>
     </section>
@@ -135,9 +109,9 @@
                 <div class="footer-links">
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="reserve-now.html" class="active"><span class="book-now-nav">Book Now</span></a></li>
-                        <li><a href="#">Rooms & Houses</a></li>
+                        <li><a href="about.html" class="active">About</a></li>
+                        <li><a href="reserve-now.html" class="book-now-nav">Book Now</a></li>
+                        <li><a href="Rooms&Houses.html">Rooms & Houses</a></li>
                         <li><a href="#">Bar & Restaurant</a></li>
                         <li><a href="#">Wedding & Events</a></li>
                         <li><a href="contact-us.html">Contact</a></li>

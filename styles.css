@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Rubik+Mono+One&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -6,11 +10,13 @@
     scroll-behavior: smooth;
     text-decoration: none;
     font-weight: 600;
-
 }
 
 :root{
   --second-color: #008000;
+  --pinyon-text:'Pinyon Script', sans-serif;
+  --roboto-text:'Roboto Mono', sans-serif;
+  --oleo-text:'Oleo Script', sans-serif;
 }
 
 body {
@@ -59,6 +65,10 @@ body {
     padding: 14px 16px;
     text-decoration: none;
   }
+
+  .book-now-nav{
+    font-family: 'Oleo Script', sans-serif;
+  }
   
   .menu-toggle {
     display: none;
@@ -100,6 +110,7 @@ body {
     font-size: 18px;
     font-weight: 700;
     text-align: center;
+    font-family: "Oleo Script", sans-serif;
   }
 
   .button {
@@ -122,6 +133,7 @@ body {
 }
 
 .aboutbutton {
+  font-family: 'Roboto Mono', sans-serif;
     padding: 10px 20px;
     text-align: center;
     background-color: transparent;
@@ -139,9 +151,10 @@ body {
   }
 
   .about-text{
+    font-family: 'Pinyon Script', sans-serif;
     font-size: 30px;
     text-align: center;
-    font-weight: 500;
+    font-weight: 700;
   }
 
   .about-text-1{
@@ -175,11 +188,13 @@ body {
       margin-top: 20px;
       font-size: 40px;
       float: left;
+      font-family: 'Pinyon Script', sans-serif;
     }
 
   #expoBtn{
     margin-top: 20px;
     float: right;
+    font-family: 'Roboto Mono', sans-serif;
   }
 
   .atroom{
@@ -188,10 +203,18 @@ body {
     background-color: rgb(255, 255, 255);
   }
 
+  .atroom p{
+    margin-left: 20px;
+  }
+
   .t_rroom{
     border-radius: 20px 20px 20px 20px;
     padding-bottom: 30px;
     background-color: rgb(255, 255, 255);
+  }
+
+  .t_rroom p{
+    margin-left: 20px;
   }
 
   .room-img img{
@@ -207,6 +230,7 @@ body {
     margin: 20px 0 0 20px;
     font-size: 25px;
     font-weight: 700;
+    font-family: 'Roboto Mono', sans-serif;
   }
 
   .room-text{
@@ -220,6 +244,7 @@ body {
 
   .roomBtn button{
     color: black;
+    font-family: 'Roboto Mono', sans-serif;
   }
 
   #Houses{
@@ -230,6 +255,7 @@ body {
     margin-top: 20px;
     float: right;
     color: black;
+    font-family: 'Roboto Mono', sans-serif;
   }
 
   .housesContainer {
@@ -256,16 +282,28 @@ body {
     background-color: rgb(197, 197, 197);
   }
 
+  .mrhouse p{
+    margin-left: 20px;
+  }
+
   .nlhouse{
     border-radius: 20px 20px 20px 20px;
     padding-bottom: 30px;
     background-color: rgb(197, 197, 197);
   }
 
+  .nlhouse  p{
+    margin-left: 20px;
+  }
+
   .tyhouse{
     border-radius: 20px 20px 20px 20px;
     padding-bottom: 30px;
     background-color: rgb(197, 197, 197);
+  }
+
+  .tyhouse p{
+    margin-left: 20px;
   }
 
   .house-img img{
@@ -278,6 +316,7 @@ body {
   }
 
   .housename{
+    font-family: 'Roboto Mono', sans-serif;
     margin: 20px 0 0 20px;
     font-size: 25px;
     font-weight: 700;
@@ -321,11 +360,13 @@ body {
       margin: 40px 0 10px 0;
       font-size: 15px;
       color: var(--second-color);
+      font-family: 'Pinyon Script', sans-serif;
     }
 
     .facilities{
       font-size: 50px;
       font-weight: 600;
+      font-family: 'Roboto Mono', sans-serif;
     }
 
     .facilitiesContainer {
@@ -350,6 +391,7 @@ body {
 
   .facilities-text{
     margin: 20px 0 20px 0;
+    font-family: 'Pinyon Script', sans-serif;
   }
 
   .facilities-text1{
@@ -382,6 +424,7 @@ body {
 
 .events-text{
   margin: 20px 0 20px 0;
+  font-family: var(--pinyon-text);
 }
 
 .events-text1{
@@ -391,17 +434,20 @@ body {
 .events-btn button{
   color: black;
   text-align: center;
+  font-family: var(--roboto-text);
 }
 
 .get-in-touch-rn{
   margin: 30px 0 10px 0;
   font-size: 15px;
   color: var(--second-color);
+  font-family: var(--pinyon-text);
 }
 
 .get-in-touch-text{
   font-size: 40px;
   margin-bottom: 30px;
+  font-family: var(--roboto-text);
 }
 
 .get-in-touch-content {
@@ -538,6 +584,26 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 10px;
+  }
+
+  /*AT Room*/
+  .room-container{
+    margin: 20px;
+  }
+
+  .room-content{
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .room-content svg{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
   }
 
 
@@ -748,6 +814,10 @@ footer {
       color: white;
       text-align: center;
       padding: 10px 10px;
+    }
+
+    .room-content{
+      font-size: 15px;
     }
   
 
